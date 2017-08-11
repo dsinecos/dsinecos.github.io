@@ -27,111 +27,136 @@
         <li><a href="#">Login</a></li>
     </ul>
 
-    <div class="container">
+    <div class="container" id="displayAllSnippets">
         <div class="row">
             <div class="sm-col-12">
                 <div class="input-group" id="searchbar">
                     <span class="input-group-addon glyphicon glyphicon-search" aria-hidden="true" id="basic-addon1"></span>
-                    <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" v-model="searchQuery" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" v-for="textSnippet in filteredSnippets">
             <div class="sm-col-12 snippet-card">
 
-                <a href="#" class="card-title">This is the title of the card</a>
-                <p class="card-url">This is the URL of the card</p>
-                <p class="card-snippet">These documents show how Palantir applies Silicon Valley’s playbook to domestic law enforcement. New users are welcomed with discounted hardware and federal grants, sharing their own data in return for access to others'.</p>
+                <a href="#" class="card-title">{{textSnippet.title}}</a>
+                <p class="card-url">{{textSnippet.source}}</p>
+                <p class="card-snippet">{{textSnippet.textsnippet}}</p>
                 <div class="card-saved-data">
-                    <p>post at 2017-08-10 19:11:04</p>
+                    <p>{{textSnippet.hash}}</p>
                 </div>
 
             </div>
         </div>
 
-        <div class="row">
-            <div class="sm-col-12 snippet-card">
 
-                <a href="#" class="card-title">This is the title of the card</a>
-                <p class="card-url">This is the URL of the card</p>
-                <p class="card-snippet">These documents show how Palantir applies Silicon Valley’s playbook to domestic law enforcement. New users are welcomed with discounted hardware and federal grants, sharing their own data in return for access to others'.</p>
-                <div class="card-saved-data">
-                    <p>post at 2017-08-10 19:11:04</p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="sm-col-12 snippet-card">
-
-                <a href="#" class="card-title">This is the title of the card</a>
-                <p class="card-url">This is the URL of the card</p>
-                <p class="card-snippet">These documents show how Palantir applies Silicon Valley’s playbook to domestic law enforcement. New users are welcomed with discounted hardware and federal grants, sharing their own data in return for access to others'.</p>
-
-                <div class="card-saved-data">
-                    <p>post at 2017-08-10 19:11:04</p>
-                </div>
-
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="sm-col-12 snippet-card">
-
-                <a href="#" class="card-title">This is the title of the card</a>
-                <p class="card-url">This is the URL of the card</p>
-                <p class="card-snippet">These documents show how Palantir applies Silicon Valley’s playbook to domestic law enforcement. New users are welcomed with discounted hardware and federal grants, sharing their own data in return for access to others'.</p>
-
-                <div class="card-saved-data">
-                    <p>post at 2017-08-10 19:11:04</p>
-                </div>
-
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="sm-col-12 snippet-card">
-
-                <a href="#" class="card-title">This is the title of the card</a>
-                <p class="card-url">This is the URL of the card</p>
-                <p class="card-snippet">These documents show how Palantir applies Silicon Valley’s playbook to domestic law enforcement. New users are welcomed with discounted hardware and federal grants, sharing their own data in return for access to others'.</p>
-
-                <div class="card-saved-data">
-                    <p>post at 2017-08-10 19:11:04</p>
-                </div>
-
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="sm-col-12 snippet-card">
-
-                <a href="#" class="card-title">This is the title of the card</a>
-                <p class="card-url">This is the URL of the card</p>
-                <p class="card-snippet">These documents show how Palantir applies Silicon Valley’s playbook to domestic law enforcement. New users are welcomed with discounted hardware and federal grants, sharing their own data in return for access to others'.</p>
-
-                <div class="card-saved-data">
-                    <p>post at 2017-08-10 19:11:04</p>
-                </div>
-
-
-            </div>
-        </div>
     </div>
 
 </body>
 
 <script>
+    /*
+    var snippetCardData = [];
+
+    $(document).ready(function () {
+
+        $.ajax({
+            type: "GET",
+            url: 'http://localhost:2347/getAllSnippets',
+            success: function (data) {
+                //console.log(data);
+                console.log("We're inside success");
+                snippetCardData = data;
+                console.log("Checking where error happened");
+                console.log(snippetCardData);
+            },
+            error: function (data) {
+                console.log('An error occurred.');
+                console.log(data);
+            }
+        });
+    });
+    */
+
+    var snippetCardData = [
+        {
+            "title": "This is the title of the card John",
+            "source": "This is the URL of the card",
+            "textsnippet": "These documents show how Palantir applies Silicon Valley’s playbook to domestic law enforcement. New users are welcomed with discounted hardware and federal grants, sharing their own data in return for access to others'.",
+            "hash": "post at 2017-08-10 19:11:04"
+        },
+        {
+            "title": "This is the title of the card John",
+            "source": "This is the URL of the card",
+            "textsnippet": "These documents show how Palantir applies Silicon Valley’s playbook to domestic law enforcement. New users are welcomed with discounted hardware and federal grants, sharing their own data in return for access to others'.",
+            "hash": "post at 2017-08-10 19:11:04"
+        },
+        {
+            "title": "This is the title of the card Brucec",
+            "source": "This is the URL of the card",
+            "textsnippet": "These documents show how Palantir applies Silicon Valley’s playbook to domestic law enforcement. New users are welcomed with discounted hardware and federal grants, sharing their own data in return for access to others'.",
+            "hash": "post at 2017-08-10 19:11:04"
+        },
+        {
+            "title": "This is the title of the card Bruce",
+            "source": "This is the URL of the card",
+            "textsnippet": "These documents show how Palantir applies Silicon Valley’s playbook to domestic law enforcement. New users are welcomed with discounted hardware and federal grants, sharing their own data in return for access to others'.",
+            "hash": "post at 2017-08-10 19:11:04"
+        },
+        {
+            "title": "This is the title of the card",
+            "source": "This is the URL of the card",
+            "textsnippet": "These documents show how Palantir applies Silicon Valley’s playbook to domestic law enforcement. New users are welcomed with discounted hardware and federal grants, sharing their own data in return for access to others'.",
+            "hash": "post at 2017-08-10 19:11:04"
+        },
+        {
+            "title": "This is the title of the card",
+            "source": "This is the URL of the card",
+            "textsnippet": "These documents show how Palantir applies Silicon Valley’s playbook to domestic law enforcement. New users are welcomed with discounted hardware and federal grants, sharing their own data in return for access to others'.",
+            "hash": "post at 2017-08-10 19:11:04"
+        },
+        {
+            "title": "This is the title of the card",
+            "source": "This is the URL of the card",
+            "textsnippet": "These documents show how Palantir applies Silicon Valley’s playbook to domestic law enforcement. New users are welcomed with discounted hardware and federal grants, sharing their own data in return for access to others'.",
+            "hash": "post at 2017-08-10 19:11:04"
+        },
+
+    ]
+
+
+    var displaySnippetComponent = new Vue({
+        el: "#displayAllSnippets",
+        data: {
+            searchQuery: "",
+            snippetCard: snippetCardData
+        },
+        computed: {
+            filteredSnippets: function () {
+                var snippetCard_array = this.snippetCard;
+                var searchQuery = this.searchQuery;
+
+                if (!searchQuery) {
+                    return snippetCard_array;
+                }
+
+                searchQuery = searchQuery.trim().toLowerCase();
+
+                snippetCard_array = snippetCard_array.filter(function (item) {
+                    if (item.title.toLowerCase().indexOf(searchQuery) !== -1) {
+                        return item;
+                    }
+                });
+
+                return snippetCard_array;
+            }
+        }
+    });
 
 </script>
 
 <style>
-
     ul {
         list-style-type: none;
         margin: 0;
@@ -184,7 +209,6 @@
         padding: 1%;
         padding-bottom: 1%;
         overflow: hidden;
-        
     }
 
     .snippet-card:hover {
@@ -201,7 +225,8 @@
         font-weight: 400;
         font-size: 1.7em;
         line-height: 1.8;
-        color: rgb(50, 50, 50);;
+        color: rgb(50, 50, 50);
+        ;
     }
 
     .card-url {
