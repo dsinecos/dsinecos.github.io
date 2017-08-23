@@ -1,1 +1,0 @@
-# dsinecos.github.io
