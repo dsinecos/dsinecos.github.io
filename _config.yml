@@ -2,10 +2,10 @@
 permalink:      /:year-:month-:day/:title
 
 # Setup
-title:          Tale
+title:          Blog
 paginate:       5
-baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+baseurl:        "/blog/"
+url:            "https://dsinecos.github.io"
 
 # Assets
 sass:
@@ -13,18 +13,20 @@ sass:
   style:        :compressed
 
 # Build settings
+sass:
+  sass_dir: _sass
 markdown:       kramdown
 
 # About
 author:
-  name:         Chester How
-  url:          http://chester.how
-  email:        chesterhow@gmail.com
+  name:         DS
+  url:          "https://dsinecos.github.io"
+  email:        dsinecos@gmail.com
 
 # Custom vars
 version:        3.4.1
 github:
-  repo:         https://github.com/chesterhow/tale
+  repo:         https://github.com/dsinecos/dsinecos.github.io/
 
 # Gems
 plugins:
