@@ -1,10 +1,11 @@
 # Permalinks
-permalink:      /:year-:month-:day/:title
+# permalink:      /:year-:month-:day/:title
+permalink:      /:title
 
 # Setup
 title:          Blog
-paginate:       5
-baseurl:        "/blog/"
+paginate:       10
+baseurl:        ""
 url:            "https://dsinecos.github.io"
 
 # Assets
@@ -16,10 +17,12 @@ sass:
 sass:
   sass_dir: _sass
 markdown:       kramdown
+kramdown:
+  input: GFM
 
 # About
 author:
-  name:         DS
+  name:         divyanshu
   url:          "https://dsinecos.github.io"
   email:        dsinecos@gmail.com
 
@@ -31,3 +34,4 @@ github:
 # Gems
 plugins:
   - jekyll-paginate
+  - jekyll-gist
