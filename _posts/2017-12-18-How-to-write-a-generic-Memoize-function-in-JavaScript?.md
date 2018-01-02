@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How to write a generic memoize function in JavaScript?"
+categories: blog
 ---
 
 ```javascript

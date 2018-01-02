@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How to manage Node.js versions on Ubuntu 16.04"
+categories: howto
 ---
 
 `n` Node version manager - [Reference](https://github.com/tj/n)

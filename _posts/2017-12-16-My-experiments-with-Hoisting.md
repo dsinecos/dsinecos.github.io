@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "My experiments with Hoisting"
+categories: blog
 ---
 
 In case of variables

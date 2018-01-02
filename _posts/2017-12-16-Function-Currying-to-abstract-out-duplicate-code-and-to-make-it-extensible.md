@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Function Currying to abstract out duplicate code and to make it extensible"
+categories: blog
 ---
 
 Reference Problem - https://www.hackerrank.com/challenges/apple-and-orange/problem

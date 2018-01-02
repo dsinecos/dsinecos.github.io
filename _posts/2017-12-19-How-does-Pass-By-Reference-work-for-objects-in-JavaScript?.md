@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How does Pass by Reference work for objects in JavaScript?"
+categories: blog
 ---
 
 I was learning to implement a Linked List where in I got confused about how objects are passed by reference in JavaScript. Skip to experiment section 

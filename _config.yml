@@ -1,7 +1,7 @@
 # Permalinks
-# permalink:      /:year-:month-:day/:title
-permalink:      /:title
-
+#permalink:      /:year-:month-:day/:title
+#permalink:      /:title
+permalink:      /:categories/:title
 # Setup
 title:          Blog
 paginate:       10

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "What is the difference between == and ===?"
+categories: blog
 ---
 
 ```===``` compares both the data and the type and returns true only if both the data and the type are match 

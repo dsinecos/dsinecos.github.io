@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How to install RabbitMQ on Ubuntu 16.04?"
+categories: howto
 ---
 
 ### 1. Updating our system's default application toolset

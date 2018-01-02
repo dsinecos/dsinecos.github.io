@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How to handle magic strings in JS"
+categories: howto
 ---
 
 Use a config.js file with the following code

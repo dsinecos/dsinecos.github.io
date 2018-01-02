@@ -5,13 +5,13 @@ author: "dsinecos"
 permalink: /recipes/
 ---
 
-## [Manage Node.js versions on Ubuntu 16.04?](/How-to-manage-Node.js-versions)
+## [Manage Node.js versions on Ubuntu 16.04?](/howto/How-to-manage-Node.js-versions)
 
 <hr>
 
-## [Handle Magic Strings in JS?](/How-to-handle-magic-strings)
+## [Handle Magic Strings in JS?](/howto/How-to-handle-magic-strings)
 
 <hr>
 
-## [Install RabbitMQ](/How-to-Install-RabbitMQ)
+## [Install RabbitMQ](/howto/How-to-Install-RabbitMQ)
 <br/>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How to deconstruct a website's front end for learning?"
+categories: blog
 ---
 
 

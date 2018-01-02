@@ -9,7 +9,7 @@ permalink: /portfolio/
 
 [Github](https://github.com/dsinecos/formHub)
 
-![FormHub](https://media.giphy.com/media/4lsBBIvwGyTo4/giphy.gif)
+<!-- ![FormHub](https://media.giphy.com/media/4lsBBIvwGyTo4/giphy.gif) -->
 
 API for static web pages to send their form submissions to and receive them on email
 

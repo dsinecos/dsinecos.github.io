@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "What is the difference between var and let"
+categories: blog
 ---
 
 Code

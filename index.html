@@ -3,11 +3,11 @@ layout: default
 title: Home
 ---
 
-<div class="catalogue">
+<!-- <div class="catalogue">
   {% for post in paginator.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       <div>
-        <!-- <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time> -->
+        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
         <h1 class="catalogue-title">{{ post.title }}</h1>
         <div class="catalogue-line"></div>
 
@@ -17,6 +17,31 @@ title: Home
 
       </div>
     </a>
+  {% endfor %}
+</div> -->
+
+<div class="catalogue">
+  {% for post in paginator.posts %}
+
+    {% if post.categories contains "blog" %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+        <div>
+          <!-- <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time> -->
+          <h1 class="catalogue-title">{{ post.title }}</h1>
+          <div class="catalogue-line"></div>
+
+          <p>
+            {{ post.content | truncatewords: 30 | strip_html }}
+          </p>
+
+        </div>
+      </a>
+        
+    {% else %}
+    <!-- <h1>{{ post.categories }}</h1> -->
+        
+    {% endif %}
+    
   {% endfor %}
 </div>
 
