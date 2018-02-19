@@ -4,7 +4,7 @@
 permalink:      /:categories/:title
 # Setup
 title:          Blog
-paginate:       10
+paginate:       30
 baseurl:        ""
 url:            "https://dsinecos.github.io"
 
