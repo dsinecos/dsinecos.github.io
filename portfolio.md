@@ -32,7 +32,7 @@ Browser game to test  your memory
 
 # [Pintext](https://pintextapp.herokuapp.com/) 
 
-[Github](https://github.com/dsinecos/pintext-backend)
+[Github](https://github.com/dsinecos/pintext-backend/tree/snippet)
 ![Pintext](/assets/Pintext.png)
 
 Generate permalink for useful text snippets 
