@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Function Currying to abstract out duplicate code and to make it extensible"
+title:  "Higher Order functions to abstract out duplicate code and make it extensible"
 categories: blog
 ---
 
 Reference Problem - https://www.hackerrank.com/challenges/apple-and-orange/problem
 
-I attempted the above problem and used function currying to understand currying and closures better. The top submission for this problem uses a simple for loop. Clearly my approach is overkill. 
+I attempted the above problem and used higher order functions to understand closures better. The top submission for this problem uses a simple for loop. Clearly my approach is overkill. 
 
 The idea behind my approach was to have an abstract level function which will return more concrete functions depending upon the parameters provided. 
 
@@ -83,7 +83,7 @@ print acount
 print ocount
 ```
 
-With currying I can add more houses and trees. For every tree or house added I'll have to generate new functions based on the abstract functions by setting new parameters for the co-ordinates for the house or tree. 
+With higher order functions I can add more houses and trees. For every tree or house added I'll have to generate new functions based on the abstract functions by setting new parameters for the co-ordinates for the house or tree. 
 
 In the case of hard coded approach, for every tree added, there will be another for loop and if statement addition to the code. If simultaneously the problem is extended from single to multi dimensions the comparison would have to be changed within each for loop in the condition statement of if.
 
@@ -111,6 +111,6 @@ var getFruit3Position = setFruitTreeCoordinate(a3);
 n times
 ```
 
-I feel that with currying these functions can be extended to n dimensions with little repetition of code. Currently the problem is in a single dimension. If I was to increase the complexity of the problem from a single dimension to three dimensions (or n dimensions), in my approach, I'll only have to change code at one point in the abstract functions. Whereas in the hardcoded approach the code will have to changed within each for loop in the condition statement of if. 
+By using higher order functions the solution can be extended to n dimensions with little repetition of code. Currently the problem is in a single dimension. If I was to increase the complexity of the problem from a single dimension to three dimensions (or n dimensions), in my approach, I'll only have to change code at one point in the higher order function. Whereas in the hardcoded approach the code will have to changed within each for loop in the condition statement of if. 
 
-My point - While the currying approach is overkill for this problem, if I look at it from the perspective of extending it to more complex problems (by increasing dimensions or by increasing trees or by increasing houses or by increasing all three) code using Function currying can be more easily extended while also maintaining the readability and adherence to the DRY principle. 
+My point - While using higher order functions is overkill for this problem, if I look at it from the perspective of extending it to more complex problems (by increasing dimensions or by increasing trees or by increasing houses or by increasing all three) this code can be more easily extended while also maintaining the readability and adherence to the DRY principle. 

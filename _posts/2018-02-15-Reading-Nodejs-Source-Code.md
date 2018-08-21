@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reading Node.js source code"
+title:  "Reading Node.js source code - How to?"
 categories: blog
 ---
 

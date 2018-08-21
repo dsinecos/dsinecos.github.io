@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "What is the difference between == and ===?"
+title:  "Difference between == and ===?"
 categories: blog
 ---
 

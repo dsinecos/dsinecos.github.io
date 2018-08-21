@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How applying `.call` and `util.inherits` affect an object and its prototypal chain?"
+title:  "Reading Nodejs source code - How fn.call and util.inherits are used to extend Prototypal Chain?"
 categories: blog
 ---
 

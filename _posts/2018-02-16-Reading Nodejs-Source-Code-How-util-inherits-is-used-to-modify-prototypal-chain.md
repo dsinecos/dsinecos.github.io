@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How util.inherits is used to modify the prototypal chain of objects?"
+title:  "Reading Nodejs source code - How util.inherits affects the prototypal chain?"
 categories: blog
 ---
 

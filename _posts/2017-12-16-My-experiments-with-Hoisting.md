@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My experiments with Hoisting"
+title:  "Experiments with Hoisting in JavaScript"
 categories: blog
 ---
 

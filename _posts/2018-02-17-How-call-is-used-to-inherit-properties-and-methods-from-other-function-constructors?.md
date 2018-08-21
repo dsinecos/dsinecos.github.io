@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How .call is used to inherit properties and methods from other function constructors?"
+title:  "Reading Nodejs source code - Using fn.call to inherit properties and methods from other constructor functions?"
 categories: blog
 ---
 

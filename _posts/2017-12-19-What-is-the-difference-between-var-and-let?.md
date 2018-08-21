@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "What is the difference between var and let"
+title:  "Difference between var and let"
 categories: blog
 ---
 
