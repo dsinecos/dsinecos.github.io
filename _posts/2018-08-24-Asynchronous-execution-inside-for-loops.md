@@ -50,7 +50,7 @@ Output
 - And after all the iterations the value of `i` and `j` is set at 3 where the execution of both the loops terminated (since it did not satisfy the condition `i < 3`)
 - Consequently when the child goroutines are executed they all print `3 + 3 = 6` on the console
 
-To get this program to output
+To get this program to output all of the combinations of `i` and `j` (order not considered) 
 
 ```
 1 + 1 = 2
