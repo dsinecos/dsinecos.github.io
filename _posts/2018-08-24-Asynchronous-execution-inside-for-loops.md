@@ -13,9 +13,12 @@ The following code is written to highlight the challenge of asynchronous executi
 
     import (
         "fmt"
+        "runtime"
     )
 
     func main() {
+
+        runtime.GOMAXPROCS(1)
 
         for i := 1; i < 3; i++ {
             for j := 1; j < 3; j++ {
@@ -30,6 +33,8 @@ The following code is written to highlight the challenge of asynchronous executi
 ```
 
 Output
+
+*(Note that the program is being executed in a single thread because of this line - `runtime.GOMAXPROCS(1)`). The output will be different if this line is removed as the code (goroutines) can be executed over multiple threads across cores simultaneously*
 
 ```
 3 + 3 = 6
