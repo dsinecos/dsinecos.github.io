@@ -5,7 +5,7 @@ author: "dsinecos"
 permalink: /portfolio/
 ---
 
-# blue-rabbit
+# blue-rabbit 
 
 [Github](https://github.com/dsinecos/blue-rabbit/tree/application)
 
@@ -27,7 +27,19 @@ TILGist is a command line tool to aid collecting your daily snippets of learning
 <hr>
 <br>
 
-# [FormHub](https://api-formhub.herokuapp.com/#) 
+# [Pintext](https://pintextapp.herokuapp.com/)
+
+[Github](https://github.com/dsinecos/pintext-backend/tree/snippet)
+
+Generate permalink for useful text snippets 
+
+![Pintext](/assets/Pintext.png)
+
+<br>
+<hr>
+<br>
+
+# [FormHub](https://api-formhub.herokuapp.com/#)
 
 [Github](https://github.com/dsinecos/formHub)
 
@@ -41,7 +53,7 @@ API for static web pages to send their form submissions to and receive them on e
 <hr>
 <br>
 
-# [Memory Cards](https://memorycardsgame.herokuapp.com) 
+# [Memory Cards](https://memorycardsgame.herokuapp.com)
 
 [Github](https://github.com/dsinecos/memorycards)
 
@@ -53,17 +65,7 @@ Browser game to test  your memory
 <hr>
 <br>
 
-# [Pintext](https://pintextapp.herokuapp.com/) 
 
-[Github](https://github.com/dsinecos/pintext-backend/tree/snippet)
-
-Generate permalink for useful text snippets 
-
-![Pintext](/assets/Pintext.png)
-
-<br>
-<hr>
-<br>
 
 <!-- # Dailyreview 
 
