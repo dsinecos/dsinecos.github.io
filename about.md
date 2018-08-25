@@ -39,7 +39,7 @@ I'm currently working as a freelance developer for Krafteer, a product studio ba
 **Languages and Frameworks**
   - Strong - Express, NodeJS, Javascript
   - Knowledgable - Python, Vuejs, React, React Native
-  - Beginner - Haskell
+  - Beginner - Golang, Haskell
 
 **Tools and Technologies**
   - MongoDB, PostgreSQL
