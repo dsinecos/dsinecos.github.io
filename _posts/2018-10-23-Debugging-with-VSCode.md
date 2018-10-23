@@ -6,12 +6,11 @@ categories: blog
 
 As I'm working my way from `console.log` statements to appropriate debugging tools I'm writing this post on setting up multi-targeted debugging using VSCode for a Node application running inside a Docker container.
 
-This post covers setting up VSCode for debugging a NodeJS application. I'll be writing another post covering steps and configuration details to debug JavaScript code running inside Chrome using VSCode.
-
-## Index
+### Index
 - [Requirements](#requirements)
 - [What happens when a Node process is run in the debug mode?](#what-happens-when-a-node-process-is-run-in-the-debug-mode)
 - [Setup Overview](#setup-overview)
+    - [Github Repo for the setup](#github-repo-for-the-setup)
 - [How to?](#how-to)
     - [Debug a Node process running inside a Docker container?](#debug-a-node-process-running-inside-a-docker-container)
     - [Connect the debugging client (VSCode) to the Node process' debug socket?](#connect-the-debugging-client-vscode-to-the-node-process-debug-socket)
@@ -23,7 +22,7 @@ This post covers setting up VSCode for debugging a NodeJS application. I'll be w
 
 <br>
 
-# Requirements
+## Requirements
 
 1. Debug client side and server side code (multi-targeted debugging) with the same Debugging Client (VSCode)
 
@@ -33,7 +32,7 @@ This post covers setting up VSCode for debugging a NodeJS application. I'll be w
 
 <br>
 
-# What happens when a Node process is run in the debug mode?
+## What happens when a Node process is run in the debug mode?
 
 To debug a Node application it is started with the `--inspect` flag. 
 
@@ -45,15 +44,17 @@ To debug a node application it is thus required to run it with the `--inspect` f
 
 <br>
 
-# Setup Overview
+## Setup Overview
 
 ![vscode-debugger-setup](/assets/vscode-debugger-setup.svg)
 
+### [Github Repo for the setup](https://github.com/dsinecos/debug-config)
+
 <br>
 
-# How to?
+## How to?
 
-## Debug a Node process running inside a Docker container?
+### Debug a Node process running inside a Docker container?
 
 To debug a Node application running inside a Docker container, the socket (host:port) on which the debugger listens for commands has to be exposed outside the container. To modify the default socket the following command can be used
 
@@ -71,7 +72,7 @@ With the above mapping set, the debugger can be accessed on the local machine on
 
 <br>
 
-## Connect the debugging client (VSCode) to the Node process' debug socket?
+### Connect the debugging client (VSCode) to the Node process' debug socket?
 
 1. Go to the root of the project directory.
 
@@ -101,7 +102,7 @@ With the above mapping set, the debugger can be accessed on the local machine on
 
 <br>
 
-## Get VSCode to reattach the debugger automatically when Nodemon restarts the application inside the container?
+### Get VSCode to reattach the debugger automatically when Nodemon restarts the application inside the container?
 
 Modify the `Docker: Attach to Node` configuration in `launch.json` and add the following field
 
@@ -113,9 +114,9 @@ Modify the `Docker: Attach to Node` configuration in `launch.json` and add the f
 
 <br>
 
-## Setup a multi-targeted debugging allowing to debug both the server side and the client side from VSCode?
+### Setup a multi-targeted debugging allowing to debug both the server side and the client side from VSCode?
 
-### Setup configuration for debugging JavaScript running inside Chrome
+#### Setup configuration for debugging JavaScript running inside Chrome
 
 1. Install extension - 'Debugger for Chrome' by Microsoft
 
@@ -145,7 +146,7 @@ Modify the `Docker: Attach to Node` configuration in `launch.json` and add the f
 
 In my setup I was unable to set breakpoints on JavaScript code inside `index.html` wrapped within `<script>` tags. I was able to debug `.js` files that were loaded into `index.html`.
 
-### Setup multi-targeted debugging 
+#### Setup multi-targeted debugging 
 
 Setup a compound debug configuration by adding the following to 'launch.json'
 
@@ -163,7 +164,7 @@ Setup a compound debug configuration by adding the following to 'launch.json'
 ```
    When the debugging session is started in VSCode both the configurations will be launched allowing to debug both the server and the client from VSCode
 
-# References
+## References
 
 1. [What happens when a Node application is run in debug mode?](https://nodejs.org/en/docs/guides/debugging-getting-started/#command-line-options)
 2. [Debugging Node Code in VS Code](https://scotch.io/tutorials/debugging-node-code-in-vs-code)
