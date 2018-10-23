@@ -8,7 +8,7 @@ As I'm working my way from `console.log` statements to appropriate debugging too
 
 This post covers setting up VSCode for debugging a NodeJS application. I'll be writing another post covering steps and configuration details to debug JavaScript code running inside Chrome using VSCode.
 
-### Index
+## Index
 - [Requirements](#requirements)
 - [What happens when a Node process is run in the debug mode?](#what-happens-when-a-node-process-is-run-in-the-debug-mode)
 - [Setup Overview](#setup-overview)
@@ -19,6 +19,7 @@ This post covers setting up VSCode for debugging a NodeJS application. I'll be w
     - [Setup a multi-targeted debugging allowing to debug both the server side and the client side from VSCode?](#setup-a-multi-targeted-debugging-allowing-to-debug-both-the-server-side-and-the-client-side-from-vscode)
         - [Setup configuration for debugging JavaScript running inside Chrome](#setup-configuration-for-debugging-javascript-running-inside-chrome)
         - [Setup multi-targeted debugging](#setup-multi-targeted-debugging)
+- [References](#references)
 
 <br>
 
@@ -141,3 +142,12 @@ Setup a compound debug configuration by adding the following to 'launch.json'
 }
 ```
    When the debugging session is started in VSCode both the configurations will be launched allowing to debug both the server and the client from VSCode
+
+# References
+
+1. [What happens when a Node application is run in debug mode?](https://nodejs.org/en/docs/guides/debugging-getting-started/#command-line-options)
+2. [Debugging Node Code in VS Code](https://scotch.io/tutorials/debugging-node-code-in-vs-code)
+3. [How to Debug a Node.js app in a Docker Container](https://blog.risingstack.com/how-to-debug-a-node-js-app-in-a-docker-container/)
+4. [Live Debugging with Docker](https://blog.docker.com/2016/07/live-debugging-docker/)
+5. [Restarting debug sessions automatically when source is edited](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_restarting-debug-sessions-automatically-when-source-is-edited)
+6. [Multi-target debugging in VSCode](https://code.visualstudio.com/docs/editor/debugging#_multitarget-debugging)
