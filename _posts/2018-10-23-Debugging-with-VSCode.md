@@ -123,7 +123,27 @@ Modify the `Docker: Attach to Node` configuration in `launch.json` and add the f
 
 3. Select the option to 'Add Configuration' at the bottom right of the screen
 
-4. Select the configuration for 'Chrome: Launch'
+4. Select the configuration for 'Chrome: Launch'. The following default configuration will be added to `launch.json`
+
+```json
+{
+    "type": "chrome",
+    "request": "launch",
+    "name": "Launch Chrome",
+    "url": "http://localhost:8080",
+    "webRoot": "${workspaceFolder}",
+}
+```
+   Modify the `url` to point to the port where the application is being served. Also modify the `webRoot` to point to the `public` folder used to host static files. 
+
+```json
+{
+    "url": "http://localhost:3000",
+    "webRoot": "${workspaceFolder}/public",
+}
+```
+
+In my setup I was unable to set breakpoints on JavaScript code inside `index.html` wrapped within `<script>` tags. I was able to debug `.js` files that were loaded into `index.html`.
 
 ### Setup multi-targeted debugging 
 
