@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git - Mental models"
+title:  "Git - Mental models and Cheatsheet"
 categories: blog
 ---
 
@@ -10,6 +10,7 @@ I'm collating here the basic mental models that help me reason about Git's behav
 - [Local and remote repositories](#local-and-remote-repositories)
 - [`git-reset`](#git-reset)
     - [Difference between `git reset` and `git checkout`](#difference-between-git-reset-and-git-checkout)
+- [`git tag`](#git-tag)
 - [References](#references)
 
 
@@ -30,10 +31,40 @@ Git is a distributed version control system. Each local repository also contains
 ## `git-reset`
 
 ![git-reset](/assets/git-reset.svg)
-
+<br>
 ### Difference between `git reset` and `git checkout`
 
 ![difference-between-git-reset-and-git-checkout](/assets/difference-between-git-reset-and-git-checkout.svg)
+
+## `git tag` 
+
+Used to highlight certain commits as a milestone in the project.
+
+| Command | Result |
+| -- | -- |
+| <br> | |
+| **Create** | |
+| `git tag <tagname>` | Creates a tag at the existing HEAD |
+| `git tag <tagname> -m "message" <commit-id>` | Creates a tag at the 'commit-id' with the message |
+| `git tag -f <tagname> <commit-id>` | To update the 'tagname' to point at 'commit-id' |
+| <br> | |
+| **Checkout** | |
+| `git checkout <tagname>` | To checkout the specific tag |
+| <br> | |
+| **List** | |
+| `git tag` | List all tags |
+| `git tag -n` | List all tags with their messages |
+| <br> | |
+| **Delete** | |
+| `git tag -d <tagname>` | To delete the tag 'tagname' |
+| <br> | |
+| **Push to remote** | |
+| `git push origin <tagname>` | To push the 'tagname' to remote repo |
+| `git push --tags` | To push all the tags to remote |
+
+<br>
+
+*`git push` by default does not push tags to the remote repository
 
 ## References
 
