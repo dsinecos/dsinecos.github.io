@@ -6,6 +6,8 @@ categories: blog
 
 I'm writing this post as a guide to setup a multi-container application using Docker-compose. The application will be running two services, a Node application and a RabbitMQ server.
 
+The github repo for this blog is hosted [here](https://github.com/dsinecos/learn-docker-compose)
+
 - [Initial Setup](#initial-setup)
     - [Setup `docker-compose.dev.yml`](#setup-docker-composedevyml)
         - [Configuration to setup RabbitMQ](#configuration-to-setup-rabbitmq)
