@@ -17,7 +17,7 @@ While the problem is simple I felt it's well suited for a Higher Order Component
 
 ## What are Higher Order Components (HOC)?
 
-HOCs allow to abstract out reusable code. HOCs allow a common functionality to be accessed across without having to rewrite the code for it within each component.
+HOCs allow to abstract out reusable code. HOCs allow a common functionality to be accessed across components without having to rewrite the code within each component.
 
 <br>
 
