@@ -27,6 +27,8 @@ In this post I want to understand the different tools involved - for generating 
 
 ## Steps in a SSH connection
 
+![ssh-tools](/assets/ssh-tools.svg)
+
 The SSH connection is implemented using the client-server model and involves the following steps
 
 1. Verifying the server (by the client)
