@@ -8,6 +8,11 @@ I have been working on an assignment for which I needed to implement GraphQL usi
 
 I'm writing this post to clarify and summarize my understanding of how the different components of GraphQL - Schema, Query, Mutations, Resolvers connect to each other.
 
+## Index
+- [What is GraphQL?](#what-is-graphql)
+- [Components of a GraphQL setup on backend](#components-of-a-graphql-setup-on-backend)
+  - [Schema](#schema)
+  - [Resolvers](#resolvers)
 <br>
 
 # What is GraphQL?
@@ -18,7 +23,7 @@ A GraphQL query allows the client to specify exactly the data they want and rece
 
 <br>
 
-# Components of a GraphQL setup on Backend
+# Components of a GraphQL setup on backend
 
 ## Schema
 
