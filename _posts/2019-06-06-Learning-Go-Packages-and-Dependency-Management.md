@@ -23,7 +23,7 @@ _As of writing this post Go modules have been introduced. This post however cove
     - [One executable package](#one-executable-package)
     - [One non-executable package](#one-non-executable-package)
     - [n Executable packages](#n-executable-packages)
-    - [n Non-executable pacakges](#n-non-executable-pacakges)
+    - [n Non-executable packages](#n-non-executable-packages)
 - [FAQ](#faq)
     - [What is the difference between `go build` and `go install`?](#what-is-the-difference-between-go-build-and-go-install)
 - [References](#references)
@@ -159,7 +159,7 @@ The project can have multiple Go files with `package <package-name>`
 
 When `go install` is run on this project the binary for the executable packages will take the name of the last enclosing folder and not the filename housing the `main()` function. Eg. `$GOPATH/src/github.com/demouser/myApp/cmd/test` would be compiled to `test`
 
-### n Non-executable pacakges
+### n Non-executable packages
 
 Each non-executable package should be declared in its own folder (else it returns a `package can't be loaded error` on `go install`)
 
