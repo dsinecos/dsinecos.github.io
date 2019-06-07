@@ -21,6 +21,8 @@ I'm writing this post to summarize the salient points about using Go Modules. I 
     - [Queries](#queries)
 - [References](#references)
 
+<br>
+
 # Go Modules
 
 ### What is a Go Module?
@@ -64,6 +66,8 @@ From Go Docs
 > Go command uses `go.sum` to verify that dependencies are bit-for-bit identical to the expected versions before using them in a build
 
 > `go.sum` file only lists hashes for the specific dependencies used by that module. When adding a new dependency or updating dependencies with `go get -u`, there is no corresponding entry in `go.sum` and therefore no direct authentication of the downloaded bits
+
+<br>
 
 # How to?
 
@@ -118,6 +122,8 @@ From Go Docs
 ### Removing unused dependencies
 
 `go mod tidy` Cleans up unused dependencies
+
+<br>
 
 # FAQ
 
