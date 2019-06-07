@@ -107,7 +107,11 @@ The long winded path to creating a project folder in Go has its reasons and beco
 
 3. `bin` - This folder stores the binary for executable packages (using `go install` for executable packages)
 
-Both `src` and `pkg` folders use the unique namespace `<remote-URL>/folder-name/` (eg. `github.com/username`) to store code and archive files
+Both `src` and `pkg` folders use the unique namespace `<remote-URL>/folder-name/` (eg. `github.com/username`) to store code and archive files. 
+
+From Go Docs
+
+> anyone should be able to publish their code on any server, in contrast to central registries such as Perl’s CPAN, Java’s Maven, or Node’s NPM. Placing domain names at the start of the go get import space reused an existing decentralized system and avoided needing to solve anew the problems of deciding who can use which names
 
 <br>
 
