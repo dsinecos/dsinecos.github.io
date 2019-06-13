@@ -352,3 +352,5 @@ This can be observed by modifying
 5. [Configuration Options for Kafka Producer and Consumer - `librdkafka`](https://github.com/edenhill/librdkafka/blob/v0.11.6/CONFIGURATION.md)
 
 6. [Producer API - python-rdkafka](https://docs.confluent.io/current/clients/confluent-kafka-python/index.html#producer)
+
+7. [Github Code - Kafka Producer](https://github.com/dsinecos/learn-kafka-producer)
