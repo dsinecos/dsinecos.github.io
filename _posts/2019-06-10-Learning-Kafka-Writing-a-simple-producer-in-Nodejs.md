@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Learning Kafka - Writing a simple Kafka Producer in Node.js"
+title:  "Learning Kafka - Writing a Kafka Producer in Node.js"
 categories: blog
 ---
 
