@@ -4,7 +4,7 @@ title:  "Learning Kafka - Configuring Kafka Producer for Message Durability"
 categories: blog
 ---
 
-The following post covers the common configuration parameters in Kafka Producer and Kafka Cluster to achieve message durability, consistent message ordering, idempotent producer and high throughput
+The following post covers the common configuration parameters in Kafka Producer and Kafka Cluster to achieve message durability
 
 ### Contents
 - [Message Durability](#message-durability)
